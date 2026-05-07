@@ -78,8 +78,7 @@ st.title("⛪ Church Media Builder (KJV Edition)")
 
 # 1. API Fetcher for KJV Scripture
 def fetch_kjv_verse(reference):
-    url = f"
-https://bible-api.com/
+    url = f"https://bible-api.com/
 
 {reference}?translation=kjv"
     try:
