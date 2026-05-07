@@ -76,10 +76,14 @@ from io import BytesIO
 st.set_page_config(page_title="Church Media Builder", layout="wide")
 st.title("⛪ Church Media Builder (KJV Edition)")
 
-# 1. API Fetcher for KJV Scripture
+ API Fetcher for KJV Scripture
+The function definition
 def fetch_kjv_verse(reference):
-   # Ensure there are no line breaks inside the quotes
-url = f"https://bible-api.com{reference}?translation=kjv"
+    (Wait for it...) Indent this line!
+    url = f"https://bible-api.com{reference}?translation=kjv"
+ And this one...
+    response = requests.get(url)
+
     try:
         response = requests.get(url)
         if response.status_code == 200:
